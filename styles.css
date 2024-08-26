@@ -1,0 +1,239 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.2;
+    color: #ffffff;
+    background-color: #012160;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 2vh 5vw;
+    box-sizing: border-box;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    position: absolute;
+    top: 2vh;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.company-logo {
+    position: absolute;
+    top: 2vh;
+    left: 2vw;
+    width: auto;
+    height: 17vh;
+    max-width: 25vw;
+    object-fit: contain;
+}
+
+.construction-logo {
+    width: auto;
+    height: 25vh;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.construction-text {
+    width: 100%;
+    max-width: 90vw;
+    margin-bottom: 3vh;
+}
+
+h1 {
+    margin: 0;
+    line-height: 1.1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.under, .construction {
+    display: block;
+    white-space: nowrap;
+}
+
+.coming-soon {
+    margin-bottom: 3vh;
+}
+
+.coming-soon h2 {
+    font-size: 2.5vw;
+    margin: 0;
+    font-weight: 200;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2vw;
+    margin-bottom: 3vh;
+}
+
+.contact-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.2vw;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-item:hover, .contact-item:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.contact-icon {
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 0.5em;
+    flex-shrink: 0;
+}
+
+footer {
+    width: 100%;
+    font-size: 0.8vw;
+    margin-top: auto;
+    padding-bottom: 1vh;
+}
+
+footer p {
+    margin: 0.5vh 0;
+}
+
+@media (max-width: 1024px) {
+    .company-logo {
+        height: 8vh;
+    }
+    
+    .construction-logo {
+        height: 20vh;
+    }
+    
+    .under, .construction {
+        font-size: 5vw;
+    }
+    
+    .coming-soon h2 {
+        font-size: 3vw;
+    }
+    
+    .contact-item {
+        font-size: 1.8vw;
+    }
+    
+    footer {
+        font-size: 1.2vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1vh 3vw;
+        justify-content: flex-start;
+    }
+
+    .company-logo {
+        height: 6vh;
+        top: 1vh;
+        left: 1vw;
+    }
+    
+    .construction-logo {
+        height: 15vh;
+        margin-top: 10vh;
+    }
+    
+    .construction-text {
+        margin-bottom: 2vh;
+    }
+    
+    .under, .construction {
+        font-size: 7vw;
+    }
+    
+    .coming-soon {
+        margin-bottom: 2vh;
+    }
+    
+    .coming-soon h2 {
+        font-size: 4vw;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 1vh;
+        margin-bottom: 2vh;
+    }
+    
+    .contact-item {
+        font-size: 2.5vw;
+    }
+    
+    footer {
+        font-size: 1.5vw;
+        padding-bottom: 2vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1vh 2vw;
+    }
+
+    .company-logo {
+        height: 5vh;
+    }
+    
+    .construction-logo {
+        height: 10vh;
+        margin-top: 8vh;
+    }
+    
+    .under, .construction {
+        font-size: 8vw;
+    }
+    
+    .coming-soon h2 {
+        font-size: 5vw;
+    }
+    
+    .contact-item {
+        font-size: 3.5vw;
+        padding: 0.3em 0.6em;
+    }
+    
+    .contact-icon {
+        width: 1.2em;
+        height: 1.2em;
+    }
+    
+    footer {
+        font-size: 2.5vw;
+        padding-bottom: 1vh;
+    }
+}
